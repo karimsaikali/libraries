@@ -13,7 +13,7 @@ wit/witHandler : this module handles the mapping between the intent that match t
 wit/witClient : this module handles the communication with wiit.ai's APIs
 wit/config: required configuration (wit.ai auth token, intent to script mappings, etc.)
 ##How to use
-Deploy the aforementioned scripts in your scriptr account, in a folder named "wit" (remove the .js extension of the files)
+Deploy the aforementioned scripts in your scriptr account, in a folder named "wit" 
 Create an intent on https://wit.ai/
 Create a test script in scriptr, which you will use as the API to invoke upon reception of the vocal command, as in the below example
 dummy API script
