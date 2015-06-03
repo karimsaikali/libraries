@@ -3,10 +3,10 @@
 Nest devices are all accessible to applications through the "Nest service", Nest's cloud platform that exposes a set of APIs as REST and REST streaming or through a Firebase client that allows applications to subscribe to events stemming from your devices. 
 ##Nest device simulator
 Whether or not you already own Nest devices (smart thermostat or smoke alarm), you might be interested in using the simulator they offer as an extension to Google chrome. This simulator allows you to create virtual Nest devices in a virtual home, send instructions to them (home + devices) and follow-up on their status using a nice user interface. You need to sign up to the latter in order to proceed with the rest of this article.
-Create Nest clients from the Nest developer web site
+##Create Nest clients from the Nest developer web site
 Before you start playing around with your virtual device, you first have to create a Nest client. So head to the client section of the Nest developer web site (you will have to sign up for a developer account there).
 If you're familiar with the creation of applications for Facebook or Twitter, you will observe that this is quite similar: the client is actually a Nest app for which you specify the permissions it can ask to obtain on your devices. Those permissions will be further granted by an end user - the owner of the devices - also owning an account at Nest (the one you created in the previous paragraph), through a nominal OAuth authentication process.
-Also make sure to set the value of the "REDIRECT URI" field of the "OAUTH SETTINGS" section to the URL of the callback script (see below for more on this script): https://api.scriptr.io/nest/authorization/getAccessToken?auth_token=RzM1RkYwVzc5Mg== (replace this latter value with your anonymous scriptr; token)
+Also make sure to set the value of the "REDIRECT URI" field of the "OAUTH SETTINGS" section to the URL of the callback script (see below for more on this script): https://api.scriptr.io/nest/authorization/getAccessToken?auth_token=RzV1QkYvVzc6Mg== (replace this latter value with your anonymous scriptr; token)
 scriptr; client for Nest
 ##Purpose
 The purpose of this client is to wrap Nest's REST APIs so they can be easily used from within scripts. It is implemented using scriptr; scripts.
